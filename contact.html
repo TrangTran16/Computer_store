@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THÔNG TIN ĐẶT HÀNG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="IMAGE/logo.jpg" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="dathang.html">Order</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html">
+            <span id="show-cart-number"></span> 
+            <img src="IMAGE/cart.png" width="30px" height="30px">
+        </a>
+        <img src="IMAGE/menu.jpg" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+  <!-- ------------Đặt hàng------------------- -->
+  <div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="IMAGE/menu1.jpg" width="100%">
+            </div>
+            <div style="width: 40%; float: right;">
+                <form action="" name="frm">
+                    <div class="group">
+                        <label for="full_name">Họ và tên</label>
+                        <input type="text" id="full_name" />
+                    </div>
+                    <div class="group">
+                        <label for="subject">Tiêu đề</label>
+                        <input type="text" id="subject" />
+                    </div>
+                    <div class="group">
+                        <label for="content">Nội dung</label>
+                        <br>
+                        <textarea cols="60" rows="6" id="content"></textarea>
+                    </div>
+                  <button type="button" class="btn" onclick="onSendContact()">Gửi</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</body>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="common.js"></script>
+    <script src="contact.js"></script>
+</html>

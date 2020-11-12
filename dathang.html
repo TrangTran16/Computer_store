@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THÔNG TIN ĐẶT HÀNG</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="PRD.JS"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="IMAGE/logo.jpg" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="dathang.html">Order</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html">
+            <span id="show-cart-number"></span> 
+            <img src="IMAGE/cart.png" width="30px" height="30px">
+        </a>
+        <img src="IMAGE/menu.jpg" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+  <!-- ------------Đặt hàng------------------- -->
+  <div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="IMAGE/menu1.jpg" width="100%">
+            </div>
+            <form action="" name="frm">
+              <label for="">Họ tên người nhận</label>
+              <input type="text" name="ten" /><br/>
+              <label for="">Số điện thoại</label>
+              <input type="number" name="so"/><br/>
+              <label for="">Địa chỉ</label>
+              <input type="text" name="diachi"/><br/>
+              <label id="lb" for="">Hình thức thanh toán</label>
+              <input type="text" name="hinhthuc"/><br/>
+              <label id="lb" for="">Tỉnh-Thành phố</label>
+              <input type="text" name="tinh"/><br/>
+              <label for="">Email</label>
+              <input type="email" name="email"/><br/>
+              <label for="">Ghi chú</label>
+              <input type="text" name="ghichu" /><br/>
+              <label for="">Số tiền thanh toán</label>
+              <input type="number" name="sotien" /><br/>
+              <button type="button" onclick="cancel()">Hủy</button>
+              <button type="button" onclick="xacnhan()">Xác nhận đặt hàng</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="common.js"></script>
+</html>

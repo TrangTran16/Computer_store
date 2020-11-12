@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB BÁN LAPTOP</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="PRD.JS"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="IMAGE/logo.jpg" width="125px"></a>
+                </div>
+                <!-- <div class="search">
+                    <form>
+                        <input type="text" value placeholder="Search.....">
+                        <input type="submit">
+                    </form>
+                </div> -->
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="dathang.html">Order</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <span id="show-cart-number"></span>
+                    <img src="IMAGE/cart.png" width="30px" height="30px">
+                </a>
+                <img src="IMAGE/menu.jpg" class="menu-icon" 
+                onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Mang đến cho bạn<br> sản phẩm tốt nhất</h1>
+                    <p>Khác hẳn đối thủ cạnh tranh: Mục đích chính và cuối cùng của tất cả 
+                        các thương hiệu là độc, khác biệt và gây ấn tượng <br></p>
+                    <a href="" class="btn">Xem ngay &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="IMAGE/menu1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="categories">
+        <div class="container">
+            <div class="row" id="computer">
+
+            </div>
+        </div>
+    </div>
+  
+    <!-- ------------- sản phẩm nỗi bật ---------------- -->
+    <div class="container">
+        <h2 class="title">Sản phẩm nỗi bật</h2>
+        <div class="row" id="noibat"></div>
+    </div>
+    <div class="container">
+        <h2 class="title">Sản phẩm mới nhất</h2>
+        <div class="row" id="product-new"></div>
+    </div>
+    <!-- ------------ Phục vụ -------------- -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2"><img src="IMAGE/product1.jpg" class="offer-img"> </div>
+                <div class="col-2">
+                    <p>Có sẵn độc quyền trên RedStore</p>
+                    <h1>DELL XPS 15 9500</h1>
+                    <small>Có màn hình 15.6" FHD+ (1920 x 1200) 
+                    InfinityEdge Non-Touch Anti-Glare 500-Nit Display và kết nối Killer 
+                    Wi-Fi 6 AX1650 (2x2) and Bluetooth 5.0
+                        </small>
+                    <a href="" class="btn">Mua ngay&#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------- Nhãn hiệu --------------------- -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="IMAGE/logo1.jpg">
+                </div>
+                <div class="col-5">
+                    <img src="IMAGE/logo2.jpg">
+                </div>
+                <div class="col-5">
+                    <img src="IMAGE/logo3.png">
+                </div>
+                <div class="col-5">
+                    <img src="IMAGE/logo4.png">
+                </div>
+                <div class="col-5">
+                    <img src="IMAGE/logo5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------footer----------- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="common.js"></script>
+<script src="index.js"></script>
+</html>

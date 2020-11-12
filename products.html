@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="IMAGE/logo.jpg" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="dathang.html">Order</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <span id="show-cart-number"></span> 
+                <img src="IMAGE/cart.png" width="30px" height="30px">
+            </a>
+            <img src="IMAGE/menu.jpg" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <div class="search-group" style="width: 50%;">
+                <input class="form-control form-search mr-2" type="text" id="search-name" placeholder="Search ....">
+                <button class="btn btn-primary" id="button-search" type="button">Search</button>
+            </div>
+            
+            <select class="ml-4" id="select-value">
+                <option value="ASC">Giá sản phẩm cao nhất</option>
+                <option value="DESC">Giá sản phẩm thấp nhất</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="categories">
+        <div class="container">
+            <div class="row" id="products">
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- ------------footer----------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="common.js"></script>
+<script src="product.js"></script>
+</html>
